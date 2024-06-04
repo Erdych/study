@@ -16,9 +16,7 @@ students = {
     'Aaron'
 }
 student_list = sorted(students)
-for i in range(0, len(student_list)):
-    average_grades.update({student_list[0] : sum(grades[0]) / len(grades[0])})
-    student_list.remove(student_list[0])
-    grades.remove(grades[0])
+for i in range(len(student_list)):
+    average_grades.update({student_list[i] : sum(grades[i]) / len(grades[i])})
     
 print(average_grades)
